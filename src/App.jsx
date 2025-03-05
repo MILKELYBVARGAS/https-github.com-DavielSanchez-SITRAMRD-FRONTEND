@@ -1,6 +1,8 @@
+import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Auth from './pages/Auth';
+import DashboardPage from './pages/DashboardPage';
+
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       <Router>
         <Routes>
           {/* Aquí debes pasar <Auth /> como elemento */}
-          <Route path="/" element={<Auth />} />
+          <Route path="/" element={<DashboardPage />} />
         </Routes>
       </Router>
     </>
@@ -16,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+
